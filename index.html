@@ -1,0 +1,143 @@
+<html lang="nl" translate="no">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bakker Sam - Openingstijden</title>
+    <link rel="icon" href="imagesOriginal/bakkersamlogo.png">
+    <link rel="stylesheet" href="css/taakbalk.css">
+    <link rel="stylesheet" href="css/container.css">
+    <link rel="stylesheet" href="css/openingstijden.css">
+    <link rel="stylesheet" href="css/achtergrond.css">
+    <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/stem.css">
+    <link rel="stylesheet" href="css/copyrightIndex.css">
+    <link rel="stylesheet" href="css/reviewPopup.css">
+   
+</head>
+
+<body class="body" id="body">
+    <div id="navigation-placeholder"></div>
+    <div id="reviewPopup" class="reviewPopup">
+        <div class="reviewPopup-content">
+            <span class="close" id="close-reviewPopup">&times;</span>
+            <h2>Geef ons een review op</h2>
+            <a class="googleLink" href="https://www.google.com/search?q=bakker+sam&rlz=1C1QPHC_nlBE969BE969&oq=bakker+sam&aqs=chrome.0.35i39i355j46i39i175i199j46i175i199i512j0i512j46i175i199i512j69i60l3.1800j0j4&sourceid=chrome&ie=UTF-8" target="_blank"><img class="googleLinkImage" src="imagesoriginal/google.png"></a>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="img-col">
+            <img class="achtergrond" src="imagesoriginal/achtergrond.png">
+            <!-- <img class="logo" src="imagesoriginal/bakkersamlogo.png"> -->
+        </div>
+
+        <div class="info" id="info">
+            <div class="info-header">
+                <div class="title">Info</div>
+                <button data-close-button class="close-button">&times;</button>
+            </div>
+            <div class="info-body">
+                <p id="countdown"></p>
+            </div>
+        </div>
+        <div id="overlay"></div>
+        <div class="openingstijden" onmouseover="time" onclick="sluitAll()">
+            <i data-modal-target="#info" id="klok" class="klok fas fa-circle-info"></i>
+
+            <h1 id="titelh1" class="titel"></h1>
+            <i class="tijd fa-solid fa-clock"></i>
+            <table>
+                <tr class="maandag dayC">
+                    <td class="DayB"><span>Maandag</span></td>
+                    <td>10.00 - 12.30</td>
+                    <td>14.00 - 18.00</td>
+                </tr>
+                <tr class="dinsdag dayC">
+                    <td class="DayB"><span>Dinsdag</span></td>
+                    <td>9.00 - 12.30</td>
+                    <td>14.00 - 18.00</td>
+                </tr>
+                <tr class="woensdag dayC">
+                    <td class="DayB"><span>Woensdag</span></td>
+                    <td>9.00 - 12.30</td>
+                    <td>14.00 - 18.00</td>
+                </tr>
+                <tr class="donderdag dayC">
+                    <td class="DayB"><span>Donderdag</span></td>
+                    <td>Gesloten</td>
+                    <td>Gesloten</td>
+                </tr>
+                <tr class="vrijdag dayC">
+                    <td class="DayB"><span>Vrijdag</span></td>
+                    <td>9.00 - 12.30</td>
+                    <td>14.00 - 18.00</td>
+                </tr>
+                <tr class="zaterdag dayC">
+                    <td class="DayB"><span>Zaterdag</span></td>
+                    <td>8.00 - 12.30</td>
+                    <td>12.30 - 17.00</td>
+                </tr>
+                <tr class="zondag dayC">
+                    <td class="DayB"><span>Zondag</span></td>
+                    <td>Gesloten</td>
+                    <td>Gesloten</td>
+                </tr>
+            </table>
+            
+            <!-- <div class="reviewContainer">
+                <div class="review">
+                    <p class="naamReview">Casier Deketelaere :</p>
+                    <div class="sterren">
+                        <img class="ster" src="imagesoriginal/ster.png">
+                        <img class="ster" src="imagesoriginal/ster.png">
+                        <img class="ster" src="imagesoriginal/ster.png">
+                        <img class="ster" src="imagesoriginal/ster.png">
+                        <img class="ster" src="imagesoriginal/ster.png">
+
+                    </div>
+                    <p class="reviewText">"Lekker brood en vlotte bediening."</p>
+
+            </div> -->
+            <!-- <div class="review">
+            <p class="naamReview">Liam Aelvoet :</p>
+
+            <div class="sterren">
+            <img class="ster" src="imagesoriginal/ster.png">
+            <img class="ster" src="imagesoriginal/ster.png">
+            <img class="ster" src="imagesoriginal/ster.png">
+            <img class="ster" src="imagesoriginal/ster.png">
+
+                    </div>
+                    <p class="reviewText">"Wat een top bakkerij!"</p>
+            </div>
+            </div> -->
+
+            <br>
+            <footer id="footer" class="copyPos">
+                <div class="locatieFooter">
+                    <div class="imgPos">
+                        <i class="locatieLogo fa-solid fa-location-dot"></i>
+                    </div>
+                    <div class="locatiePos">
+                        <a href="https://www.google.be/maps/place/Bakker+Sam/@50.8099459,3.6220642,17z/data=!3m1!4b1!4m5!3m4!1s0x47c30fd21fa3bd83:0x176555f3000d2185!8m2!3d50.8099442!4d3.6242385" target="_blank" id="tag">
+                            <p class="locatie">Nederholbeekstraat 17, 9680 Etikhove<p>
+                        </a>
+                    </div>
+                </div>
+
+                <p class="copyright">Copyright © 2024 Bakker Sam. Alle rechten voorbehouden</p>
+                <p class="privacy"><a class="privacyLink" href="privacyBeleid.html">Privacy Policy</a></p>
+            </footer>
+
+
+
+            <script src="js/include.js"></script>
+            <script src="js/openingstijden.js"></script>
+            <script src="js/popup.js"></script>
+            <script src="js/taakbalk.js"></script>
+            <script src="js/zijmenu.js"></script>
+            <script src="js/reviewPopup.js"></script>
+            <script src="https://kit.fontawesome.com/d67b9bf45c.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

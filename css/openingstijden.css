@@ -1,0 +1,265 @@
+body {
+    font-family: helvetica;
+}
+
+.copyright {
+        bottom: 0;
+
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+
+.copyPos {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: lightgray;
+    margin: 0;
+}
+
+/* .locatieIMG {
+    position: relative;
+    margin-left: 40%;
+    top: 30px;
+}
+  */
+.locatieLogo {
+    width: 30px;
+} 
+
+a {
+    text-decoration: none;
+}
+
+.locatie {
+    color: black;
+}
+
+/* .locatie {
+    text-align: center;
+    text-decoration: none;
+    color: black;
+} */
+/* <div class="locatieFooter">
+<div class="imgPos">
+    <img class="locatieLogo" src="images/locatie.png">
+</div>
+<div class="locatiePos">
+<a href="https://www.google.be/maps/place/Bakker+Sam/@50.8099459,3.6220642,17z/data=!3m1!4b1!4m5!3m4!1s0x47c30fd21fa3bd83:0x176555f3000d2185!8m2!3d50.8099442!4d3.6242385" target="_blank">
+    <p class="locatie">Nederholbeekstraat 17, 9680 Etikhove<p>
+</a>
+</div>
+</div> */
+
+.locatieFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -20px; 
+}
+
+#countdown {
+    font-size  : 2em;
+    font-weight: bold;
+    color      : #000;
+    text-align : center;
+    margin     : 0;
+    padding    : 0;
+}
+
+.klok {
+    width: 30px;
+    margin-left: 220px;
+    margin-bottom: -29;
+    cursor: pointer;
+}
+
+.tijd {
+    width: 30px;
+    margin-top: -30.5px;
+    margin-left: -200px;
+}
+
+.openingstijden {
+    margin-top     : 20px;
+    margin-bottom  : 20px;
+    font-size      : 20px;
+    font-weight    : bold;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+}
+
+.closed::after {
+    color  : red;
+    content: "openingstijden";
+}
+
+.closed:hover::after {
+    color           : white;
+    background-color: red;
+    content         : "We zijn gesloten";
+    border-radius   : 20px;
+    padding         : 5px;
+}
+
+.open::after {
+    color  : #8CC63F;
+    content: "openingstijden";
+    border-radius   : 20px;
+    padding         : 5px;
+
+}
+
+.open:hover::after {
+    color           : white;
+    background-color: #8CC63F;
+    content         : "We zijn open";
+}
+
+h1 {
+    font-size     : 16px;
+    font-weight   : 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+p {
+    font-size     : 14px;
+    font-weight   : 400;
+    letter-spacing: 0.5px;
+    color         : red;
+}
+
+table {
+    border-collapse: collapse;
+    font-size: large;
+}
+
+td:first-child,
+th:first-child {
+  border-radius: 10px 0 0 10px;
+}
+
+td:last-child,
+th:last-child {
+  border-radius: 0 10px 10px 0;
+}
+#currdate {
+    border: 0.5px solid black;
+}
+
+#currdate>td {
+    color      : black;
+    font-weight: 600;
+}
+
+#currdate>td>span {
+    color: black;
+}
+
+.opening-hours {
+    overflow        : hidden;
+    box-shadow      : 0 1px 3px rgba(0, 0, 0, 0.10), 0 1px 2px rgba(0, 0, 0, 0.24);
+    background-color: white;
+    padding         : 1em;
+    max-width       : 450px;
+    min-width       : 320px;
+}
+
+
+.dayC>td {
+    font-size     : 12px;
+    font-weight   : 400;
+    letter-spacing: 1.2px;
+    color         : #A299AC;
+    text-transform: uppercase;
+    padding       : 1em;
+}
+
+.dayC>td>span {
+    font-size     : 12px;
+    font-weight   : 600;
+    letter-spacing: 1.2px;
+    color         : #A299AC;
+    text-transform: uppercase;
+}
+
+@media screen and (max-width: 382px) {
+
+    .dayC>td {
+        font-size: 14px;
+        padding  : 15px 5px;
+    }
+
+    #activerow {
+        border          : none;
+        background-color: #8CC63F;
+    }
+
+    #activerow>td {
+        color      : white;
+        font-weight: 600;
+    }
+
+    #activerow>td>span {
+        color: white;
+    }
+
+}
+
+#countdown {
+    color    : #8CC63F;
+    font-size: large;
+}
+
+.reviewContainer {
+    height         : auto;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+    flex-flow      : wrap;
+    margin-bottom: 100px;
+}
+
+.review {
+    width           : 300px;
+    height          : 150px;
+    background-color: rgb(231, 231, 231);
+    margin          : 20px;
+    box-sizing      : border-box;
+    font-size       : 50px;
+    transition      : 0.5s;
+    border-radius   : 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+.ster {
+    width: 30px;
+    margin-top: 20px;
+}
+
+.naamReview {
+    color: black;
+    font-size: 15px;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.reviewText {
+    color: black;
+    font-size: 15px;
+}
+
+.privacy {
+    text-align: center !important;	
+    color: black !important;
+}
+
+.privacyLink {
+    color: black !important;
+    text-decoration: underline !important;
+}

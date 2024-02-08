@@ -1,0 +1,77 @@
+body {
+    background-color: #d3d3d3;
+}
+
+.containerproducten {
+    height         : auto;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+    flex-flow      : wrap;
+    margin-top     : 50px;
+    margin-bottom  : 50px;
+    max-width      : 1600px;
+    margin-left    : auto;
+    margin-right   : auto;
+
+}
+
+.box {
+    width           : 320px;
+    height          : 320px;
+    background-color: rgb(255, 255, 255);
+    margin          : 2px;
+    box-sizing      : border-box;
+    font-size       : 50px;
+    transition      : 0.5s;
+    border-radius   : 10px;
+    box-shadow      : rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.box:hover {
+    transform : scale(1.1);
+    transition: 0.5s;
+
+}
+
+.box:hover .product {
+    opacity: 0.5;
+}
+
+.prodtext {
+    width          : 100%;
+    margin-top     : 62%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    font-size      : 32px;
+    transition     : 0.5s;
+    font-weight    : bold;
+}
+
+.box:hover .prodtext {
+    transform : translateY(-103px);
+    transition: 0.5s;
+}
+
+.product {
+    margin-top   : 20px;
+    width        : 70%;
+    height       : 70%;
+    display      : flex;
+    margin-bottom: -60%;
+    border-radius: 20px;
+    margin-left  : auto;
+    margin-right : auto;
+}
+
+.titel {
+    background-color: #676767;
+    color           : #fff;
+    padding         : 20px;
+    text-align      : center;
+    width           : 350px;
+    margin          : 50px auto;
+    border-radius   : 20px;
+}

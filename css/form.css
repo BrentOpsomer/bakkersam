@@ -1,0 +1,89 @@
+.aanmeldForm {
+    width        : 30%;
+    margin       : 0 auto;
+    margin-top   : 30px;
+    padding      : 15px;
+    background   : #f2f2f2;
+    border-radius: 5px;
+    font-family  : 'Open Sans', sans-serif;
+    font-size    : 16px;
+    color        : #333;
+    box-shadow   : 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+
+}
+
+.aanmeldForm input {
+    width        : 80%;
+    padding      : 10px;
+    margin-bottom: 20px;
+    font-size    : 16px;
+    border       : 1px solid #ccc;
+    border-radius: 3px;
+    margin       : 0 auto;
+    display      : block;
+    box-shadow   : 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.24);
+}
+
+.aanmeldForm label {
+    margin-top   : 10px;
+    margin-bottom: 10px;
+    display      : block;
+    text-align   : center;
+}
+
+.aanmeldForm button {
+    width        : 80%;
+    padding      : 10px;
+    margin-top   : 5%;
+    font-size    : 16px;
+    background   : #2196F3;
+    border       : none;
+    border-radius: 3px;
+    color        : #fff;
+    cursor       : pointer;
+    margin       : 0 auto;
+    display      : block;
+    margin-top   : 20px;
+
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 3px 3px 0 rgba(0, 0, 0, 0.24);
+}
+
+h1 {
+    text-align   : center;
+    margin-top   : 20px;
+    margin-bottom: 20px;
+}
+
+p {
+    text-align   : center;
+    margin-top   : 20px;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 100px) {
+    .aanmeldForm {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .aanmeldForm {
+        width: 70%;
+
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .aanmeldForm {
+        width: 80%;
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .aanmeldForm {
+        width: 80%;
+
+    }
+}

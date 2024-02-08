@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin : 0;
+  padding: 0;
+}
+
+.navigatie {
+  display         : flex;
+  position        : relative;
+  top: 0;
+  justify-content : space-between;
+  align-items     : center;
+  color           : white;
+  transition      : 0.5s;
+  width: 100%;       
+  background: linear-gradient(to right,
+  rgb(240, 80, 80),
+  rgb(220, 60, 60),
+  rgb(200, 40, 40),
+  rgb(180, 20, 20),
+  rgb(160, 0, 0),
+  rgb(160, 0, 0),
+  rgb(160, 0, 0),
+  rgb(160, 0, 0),
+  rgb(160, 0, 0),
+  rgb(160, 0, 0),
+  rgb(160, 0, 0),
+  rgb(160, 0, 0)
+);
+box-shadow: 0px 5px 10px rgba(137, 16, 16, 0.8); /* Adjust the alpha value as needed */
+  box-shadow: 5px 10px 15px rgba(227, 15, 15, 0.8); /* Adjust the alpha value as needed */
+
+}
+
+
+
+
+.bedrijfsTitel {
+  font-size: 1.8rem;
+  margin   : .5rem;
+}
+
+.bedrijfsTitel img {
+  width: 350px;
+}
+
+
+.navigatieLinks li {
+  list-style: none;
+} 
+
+.navigatieLinks li a {
+  display        : block;
+  text-decoration: none;
+  color          : white;
+  padding        : 1rem;
+}
+
+.navigatieLinks li:hover {
+  background-color:   rgb(173, 48, 48)
+}
+
+.navigatieLinks {
+  height: 100%;
+  font-size: 30px;
+}
+
+.navigatieLinks ul {
+  display: flex;
+  margin : 0;
+  padding: 0;
+}
+
+.zijKnop {
+  position       : absolute;
+  top            : .75rem;
+  right          : 1rem;
+  display        : block;
+  flex-direction : column;
+  justify-content: space-between;
+  width          : 30px;
+  height         : 21px;
+  color         : black;
+}
+
+.zijKnop .bar {
+  height          : 3px;
+  width           : 100%;
+  background-color: white;
+  border-radius   : 10px;
+}
+
+li {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 15px;
+  margin: 10px;
+  transition: 0.2s;
+}
+
+.winkelmand {
+  width: 30px;
+  margin: 0;
+}
+
+@media (max-width: 1200px) {
+  .navigatie {
+    flex-direction: column;
+    transition    : 0.5s;
+    align-items: flex-start;
+  }
+
+  .zijKnop {
+    display   : flex;
+    transition: 0.5s;
+  }
+
+  .navigatieLinks {
+    display: none;
+    width  : 100%;
+  }
+
+  .navigatieLinks ul {
+    width         : 100%;
+    flex-direction: column;
+  }
+
+  .navigatieLinks ul li {
+    text-align: center;
+  }
+
+  .navigatieLinks ul li a {
+    padding: .5rem 1rem;
+  }
+
+  .navigatieLinks.active {
+    display: flex;
+  }
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  color: white;
+}

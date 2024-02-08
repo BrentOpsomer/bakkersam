@@ -1,0 +1,145 @@
+html, body {
+    background-color: #f4f0eb;
+}
+
+.copyPos {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    background-color: lightgray;
+    margin: 0;
+}
+
+.titel {
+    background-color: #676767;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    width: 350px;
+    margin: 50px auto;
+    border-radius: 20px;
+}
+
+.containerAssortiment {
+    background-color: #f4f0eb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 150px;
+    margin-bottom: 150px;
+}
+
+.assortimentBox {
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 50px;
+    height: 350px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+/* .assortimentBox:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff3333, #ff6666, #ff9999, #ffcccc, #ff7f7f, #ff4c4c, #ff1a1a, #d52222);
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    background-size: 200% 200%;
+    z-index: -1;
+    filter: blur(5px);
+    width: 200%;
+    height: 200%;
+    animation: glowing 20s linear infinite;
+    transition: opacity .3s ease-in-out;
+    border-radius: 20px;
+} */
+
+/* .assortimentBox:active {
+    color: #000;
+}
+
+.assortimentBox:active:after {
+    background: transparent;
+}
+
+.assortimentBox:hover:before {
+    opacity: 1;
+} */
+
+/* @keyframes glowing {
+    0% { background-position: 0 0; }
+    50% { background-position: 200% 0; }
+    100% { background-position: 0 0; }
+} */
+
+/* .assortimentBox:after {
+    z-index: -2;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #f2f2f2;
+    left: 0;
+    top: 0;
+    border-radius: 20px;
+} */
+
+.assortimentBox:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+    background-color: #e6e6e6;
+}
+
+.assortimentBox:hover .assort {
+    opacity: 1;
+}
+
+.assortText {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    transition: 0.5s;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.AssortimentBox:hover .assortText {
+    transition: 0.5s;
+    opacity: 1;
+}
+
+.assort {
+    margin-top: 20px;
+    width: 70%;
+    height: 70%;
+    display: flex;
+    margin-bottom: -60%;
+    border-radius: 20px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.assortimentBox img {
+    width: 270px;
+    margin: 0 auto;
+    border-radius: 20px;
+}

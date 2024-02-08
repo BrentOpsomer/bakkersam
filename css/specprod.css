@@ -1,0 +1,80 @@
+body {
+    background-color: #f2f2f2;
+}
+
+.containerproducten {
+    width          : 100%;
+    height         : auto;
+    display        : flex;
+    flex-direction : row;
+    justify-content: space-around;
+    flex-flow      : wrap;
+    max-width:  1600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.box {
+    width           : 320px;
+    height          : 320px;
+    background-color: rgb(255, 255, 255);
+    margin          : 20px;
+    box-sizing      : border-box;
+    font-size       : 50px;
+    transition      : 0.5s;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+
+}
+
+
+
+.prodtext {
+    width          : 100%;
+    display        : flex;
+    margin-top: 5px;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    font-size      : 32px;
+    transition     : 0.5s;
+}
+
+.prodtextLang {
+    width          : 100%;
+    margin-top     : 60%;
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    align-items    : center;
+    font-size      : 32px;
+    transition     : 0.5s;
+}
+
+.product {
+    margin-top   : 1px;
+    width        : 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.titel {
+    background-color: #2d2d2d; /* Donkere achtergrondkleur voor een modern uiterlijk */
+    color: #ff0000; /* Opvallende tekstkleur */
+    padding: 30px; /* Meer ruimte rondom de tekst */
+    text-align: center;
+    width: 400px; /* Iets breder voor een ruimtelijker gevoel */
+    margin: 50px auto;
+    border-radius: 30px; /* Meer afgeronde hoeken voor een eigentijds effect */
+    box-shadow: 0px 0px 15px rgba(255, 0, 0, 0.7); /* Zachte schaduw voor diepte */
+    font-size: 24px; /* Kleinere lettergrootte voor een strak uiterlijk */
+    font-weight: bold; /* Vetgedrukte tekst voor nadruk */
+    transition: background-color 0.5s, color 0.5s; /* Soepele overgangseffecten */
+}
+
+.titel:hover {
+    background-color: #00bfff; /* Verander de achtergrondkleur bij hover voor interactie */
+    color: #2d2d2d; /* Verander de tekstkleur bij hover voor contrast */
+}
+
+

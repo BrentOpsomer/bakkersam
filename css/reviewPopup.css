@@ -1,0 +1,63 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+  }
+  
+  .reviewPopup {
+    position: fixed;
+    right: -400px;
+    top: 70%;
+    transform: translate(0, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 999;
+    transition: right 0.5s ease-in-out;
+    border-radius: 50px 0px 0px 50px;
+  }
+  
+  .reviewPopup-content {
+    text-align: center;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .reviewPopup.show {
+    right: 0px;
+  }
+
+  .googleLinkImage {
+    width: 120px;
+  }
+
+    @media screen and (max-width: 768px) {
+        h2 {
+            font-size: 1rem;
+        }
+        .googleLinkImage {
+            width: 80px;
+        }
+
+    }
+
+
+    /* <div id="reviewPopup" class="reviewPopup">
+        <div class="reviewPopup-content">
+            <span class="close" id="close-reviewPopup">&times;</span>
+            <h2>Geef ons een review op</h2>
+            <a class="googleLink" href="https://www.google.com/search?q=bakker+sam&rlz=1C1QPHC_nlBE969BE969&oq=bakker+sam&aqs=chrome.0.35i39i355j46i39i175i199j46i175i199i512j0i512j46i175i199i512j69i60l3.1800j0j4&sourceid=chrome&ie=UTF-8" target="_blank"><img class="googleLinkImage" src="images/google.png"></a>
+        </div>
+    </div> */
+
+ 
