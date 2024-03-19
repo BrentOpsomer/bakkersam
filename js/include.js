@@ -10,7 +10,7 @@ function insertNavigationMenu() {
     
 
     <nav class="navigatie">
-      <div class="bedrijfstitel"><img src="./imagesoriginal/logogroot.png"></div>
+      <div class="bedrijfstitel"><img src="./imagesOriginal/logogroot.png"></div>
       <a href="#" class="zijKnop">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -29,7 +29,7 @@ function insertNavigationMenu() {
       <a href="#" class="sluitKnop" onclick="sluitZijMenu()">&times;</a>
       <!-- prod 1 -->
       <div class="sidelogoPlace">
-        <img class="sidelogo" src="/imagesoriginal/bakkersamlogo.png">
+        <img class="sidelogo" src="/imagesOriginal/bakkersamlogo.png">
       </div>
       <div class="contact">
           <h2 class="contactName"><i>Bakker Sam</i></h2>
@@ -43,7 +43,7 @@ function insertNavigationMenu() {
       
       <div class="bestellen active">
               <h2 class="reviewG">Geef ons een review op</h2> 
-              <a href="https://www.google.com/search?q=bakker+sam&rlz=1C1QPHC_nlBE969BE969&oq=bakker+sam&aqs=chrome.0.35i39i355j46i39i175i199j46i175i199i512j0i512j46i175i199i512j69i60l3.1800j0j4&sourceid=chrome&ie=UTF-8" target="_blank"><img class="google" src="imagesoriginal/google.png"></a>
+              <a href="https://www.google.com/search?q=bakker+sam&rlz=1C1QPHC_nlBE969BE969&oq=bakker+sam&aqs=chrome.0.35i39i355j46i39i175i199j46i175i199i512j0i512j46i175i199i512j69i60l3.1800j0j4&sourceid=chrome&ie=UTF-8" target="_blank"><img class="google" src="imagesOriginal/google.png"></a>
       </div>
     </div>
     <script src="taakbalk.js"></script>
