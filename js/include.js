@@ -10,7 +10,7 @@ function insertNavigationMenu() {
     
 
     <nav class="navigatie">
-      <div class="bedrijfstitel"><img src="imagesoriginal/logogroot.png"></div>
+      <div class="bedrijfstitel"><img src="/imagesoriginal/logogroot.png"></div>
       <a href="#" class="zijKnop">
         <span class="bar"></span>
         <span class="bar"></span>
@@ -29,7 +29,7 @@ function insertNavigationMenu() {
       <a href="#" class="sluitKnop" onclick="sluitZijMenu()">&times;</a>
       <!-- prod 1 -->
       <div class="sidelogoPlace">
-        <img class="sidelogo" src="imagesoriginal/bakkersamlogo.png">
+        <img class="sidelogo" src="/imagesoriginal/bakkersamlogo.png">
       </div>
       <div class="contact">
           <h2 class="contactName"><i>Bakker Sam</i></h2>
