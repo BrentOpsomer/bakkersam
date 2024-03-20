@@ -111,6 +111,9 @@ a {
     }
 }
 
+iframe {
+    border-radius: 5px;
+}
 
 /* .locatie {
     text-align: center;
