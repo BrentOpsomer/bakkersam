@@ -63,12 +63,12 @@ a {
     text-align    : center;
     font-size     : 30px;
     color         : rgb(82, 82, 82);
-    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+   
 }
 
 .scrolldown-container {
-    position: relative; /* Relatieve positionering */
-    bottom: 20px; /* Afstand tot de onderkant van het scherm */
+    position: relative;
+    bottom: 20px; 
     margin-left: 49.25%;
 }
 
@@ -87,8 +87,8 @@ a {
     background-color: #000;
     border-radius: 50%;
     position: absolute;
-    top: 5px; /* Plaats de punt in het midden van de scrolldown-muis */
-    left: 30.5%; /* Plaats de punt in het midden van de scrolldown-muis */	
+    top: 5px; 
+    left: 30.5%; 	
     transform: translateX(-50%);
     animation: scrolldown-dot-animation 1.5s infinite;
 }
