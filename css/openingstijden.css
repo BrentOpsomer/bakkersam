@@ -14,7 +14,7 @@ body {
     position        : relative;
     bottom          : 0;
     width           : 100%;
-    height          : 100vh;
+    height          : 80px;
     background-color: lightgray;
     z-index         : 999;
 }
@@ -36,6 +36,81 @@ a {
 .locatie {
     color: black;
 }
+
+.locatieKaart {
+    margin-top   : 50px;
+    margin-bottom: 150px;
+    width        : 50%;
+    margin-left  : 25%;
+    height       : 450px;
+    text-align   : center;
+    box-sizing   : border-box;
+    font-size    : 50px;
+    transition   : 0.5s;
+    box-shadow   : rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 5px;
+}
+
+.lijn {
+    width         : 75%;
+    padding-bottom: 25px;
+    margin        : 25px;
+    border-bottom : 2px solid lightgrey;
+    margin        : 0 auto;
+}
+
+.specTitle {
+    text-align    : center;
+    font-size     : 30px;
+    color         : rgb(82, 82, 82);
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+}
+
+.scrolldown-container {
+    position: relative; /* Relatieve positionering */
+    bottom: 20px; /* Afstand tot de onderkant van het scherm */
+    margin-left: 49.25%;
+}
+
+.scrolldown-mouse {
+    margin-left: 0 auto;
+    width: 30px;
+    height: 50px;
+    border: 2px solid #000;
+    border-radius: 25px;
+    position: relative;
+}
+
+.scrolldown-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #000;
+    border-radius: 50%;
+    position: absolute;
+    top: 5px; /* Plaats de punt in het midden van de scrolldown-muis */
+    left: 30.5%; /* Plaats de punt in het midden van de scrolldown-muis */	
+    transform: translateX(-50%);
+    animation: scrolldown-dot-animation 1.5s infinite;
+}
+
+@keyframes scrolldown-dot-animation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(20px);
+    }
+}
+
+@keyframes scrolldown-animation {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+}
+
 
 /* .locatie {
     text-align: center;
