@@ -4,7 +4,6 @@ html, body {
 
 .copyPos {
     bottom: 0;
-    position: fixed;
     width: 100%;
     background-color: lightgray;
     margin: 0;
