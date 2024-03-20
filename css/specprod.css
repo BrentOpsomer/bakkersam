@@ -3,42 +3,54 @@ body {
 }
 
 .containerproducten {
-    width          : 100%;
-    height         : auto;
-    display        : flex;
-    flex-direction : row;
-    justify-content: space-around;
-    flex-flow      : wrap;
-    max-width:  1600px;
-    margin-left: auto;
-    margin-right: auto;
+    background-color: #f4f0eb;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 1100px;
+    margin: 0 auto;
+    position: relative;
+    padding-bottom: 150px;
+    margin-bottom: 150px;;
 }
 
 .box {
-    width           : 320px;
-    height          : 320px;
-    background-color: rgb(255, 255, 255);
-    margin          : 20px;
-    box-sizing      : border-box;
-    font-size       : 50px;
-    transition      : 0.5s;
-    border-radius: 10px;
+    background-color: #ffffff;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-
+    border-radius: 10px;
+    font-size: 50px;
+    height: 350px;
+    margin: 20px;
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    transition: 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    text-align: center;
 }
 
 
 
 .prodtext {
-    width          : 100%;
-    display        : flex;
-    margin-top: 5px;
-    flex-direction : column;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items    : center;
-    font-size      : 32px;
-    transition     : 0.5s;
+    align-items: center;
+    font-size: 25px;
+    transition: 0.5s;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+    background-color: #e6e6e6;
+    padding: 20px;
+    margin-bottom: 0;
 }
+
 
 .prodtextLang {
     width          : 100%;

@@ -51,7 +51,6 @@ html, body {
     align-items: center;
     justify-content: flex-end;
     text-align: center;
-    padding-bottom: 20px;
 }
 
 /* .assortimentBox:before {
@@ -121,6 +120,10 @@ html, body {
     font-weight: bold;
     cursor: pointer;
     margin-bottom: 20px;
+    background-color: #e6e6e6;
+    padding: 20px;
+    margin-bottom: 0;
+    
 }
 
 .AssortimentBox:hover .assortText {
