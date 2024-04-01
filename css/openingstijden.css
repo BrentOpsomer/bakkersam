@@ -212,6 +212,10 @@ iframe {
     content: "openingstijden";
 }
 
+table {
+   margin-top: 20px;
+}
+
 .closed:hover::after {
     color           : white;
     background-color: red;
