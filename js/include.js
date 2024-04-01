@@ -10,7 +10,7 @@ function insertNavigationMenu() {
     
 
     <nav class="navigatie">
-      <div class="bedrijfstitel"><img onclick="location.href='www.bakkersam.be'" src="./imagesOriginal/logogroot.png"></div>
+      <div class="bedrijfstitel"><img onclick="location.href='index'" src="./imagesOriginal/logogroot.png"></div>
       <a href="#" class="zijKnop">
         <span class="bar"></span>
         <span class="bar"></span>
