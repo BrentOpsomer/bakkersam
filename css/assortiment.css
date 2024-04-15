@@ -115,7 +115,7 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    font-size: 32px;
+    font-size: 30px;
     transition: 0.5s;
     font-weight: bold;
     cursor: pointer;
