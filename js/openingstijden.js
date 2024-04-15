@@ -1,1 +1,134 @@
-function _0x2528(_0x4ff4b0,_0x2fe1b6){const _0x3ba175=_0x3ba1();return _0x2528=function(_0x252874,_0x5d9bc3){_0x252874=_0x252874-0xbe;let _0x42ae05=_0x3ba175[_0x252874];return _0x42ae05;},_0x2528(_0x4ff4b0,_0x2fe1b6);}(function(_0x4a7194,_0x34aff9){const _0x4c5f35=_0x2528,_0x208ddc=_0x4a7194();while(!![]){try{const _0x5e9de0=-parseInt(_0x4c5f35(0xca))/0x1+parseInt(_0x4c5f35(0xc1))/0x2*(parseInt(_0x4c5f35(0xce))/0x3)+-parseInt(_0x4c5f35(0xcb))/0x4+-parseInt(_0x4c5f35(0xc5))/0x5*(-parseInt(_0x4c5f35(0xcf))/0x6)+parseInt(_0x4c5f35(0xd1))/0x7+-parseInt(_0x4c5f35(0xc9))/0x8+-parseInt(_0x4c5f35(0xd0))/0x9*(-parseInt(_0x4c5f35(0xc8))/0xa);if(_0x5e9de0===_0x34aff9)break;else _0x208ddc['push'](_0x208ddc['shift']());}catch(_0x533e13){_0x208ddc['push'](_0x208ddc['shift']());}}}(_0x3ba1,0x36208));const time=()=>{const _0x36fd23=_0x2528;var _0x2b54f9=document[_0x36fd23(0xc6)]('#titelh1');const _0x26ade5=document[_0x36fd23(0xc6)](_0x36fd23(0xc4)),_0x15357d=document['querySelector'](_0x36fd23(0xbf)),_0x4ed0d0=document[_0x36fd23(0xc6)](_0x36fd23(0xcd)),_0x4294ad=document['querySelector']('.donderdag'),_0x43ffd1=document[_0x36fd23(0xc6)](_0x36fd23(0xbe)),_0x552482=document[_0x36fd23(0xc6)](_0x36fd23(0xc0)),_0x36cecf=document[_0x36fd23(0xc6)](_0x36fd23(0xcc)),_0x53183e=new Date()[_0x36fd23(0xd2)]();function _0x57f4cd(){const _0x272c7c=_0x36fd23;countDate1=new Date()[_0x272c7c(0xd2)](_0x272c7c(0xc2));const _0x33cdfc=0x3e8,_0x63b95a=_0x33cdfc*0x3c,_0x3d9abd=_0x63b95a*0x3c,_0xfb0a16=_0x3d9abd*0x18;}let _0x3c13fe=document[_0x36fd23(0xc3)](_0x36fd23(0xc7));};time();function _0x3ba1(){const _0x3b5e06=['1629QuHahQ','2262204zFhcPh','getHours','.vrijdag','.dinsdag','.zaterdag','572842muJYeG','10:00','getElementById','.maandag','5dwSUNb','querySelector','countdown','22010brzBHE','2947152hSLeOk','148523YZtauF','1117684NEoale','.zondag','.woensdag','3fLHPdt','60408MFAowO'];_0x3ba1=function(){return _0x3b5e06;};return _0x3ba1();}
+const time = () => {
+
+    var titel = document.querySelector('#titelh1');
+    const monday = document.querySelector('.maandag');
+    const tuesday = document.querySelector('.dinsdag');
+    const wednesday = document.querySelector('.woensdag');
+    const thursday = document.querySelector('.donderdag');
+    const friday = document.querySelector('.vrijdag');
+    const saturday = document.querySelector('.zaterdag');
+    const sunday = document.querySelector('.zondag');
+    const datum = new Date().getHours();
+
+    function aftellen() {
+        countDate1 = new Date().getHours("10:00");
+        const seconden = 1000;
+        const minuten = seconden * 60;
+        const uren = minuten * 60;
+        const dagen = uren * 24;
+        // const textdag = Math.floor(tussentijd / dagen);
+        // const textuur = Math.floor((tussentijd % dagen) / uren);
+        // const textminuut = Math.floor((tussentijd % uren) / minuten);
+        // const textseconde = Math.floor((tussentijd % minuten) / seconden);
+    }
+    let text = document.getElementById("countdown");
+
+    switch (new Date().getDay()) {
+
+        case 1:
+            monday.setAttribute("id", "currdate");
+            if (datum >= 10 && datum < 12.5 || datum >= 14 && datum < 18) {
+                titel.classList.toggle("open");
+            } else {
+                titel.classList.toggle("closed");
+            }
+            if (datum < 10) {
+                text.innerHTML = "We openen om 10 uur";
+            } else if (datum >= 10 && datum < 12.5) {
+                text.innerHTML = "Wij sluiten om 12 uur 30";
+            } else if (datum >= 12.5 && datum < 14) {
+                text.innerHTML = "We openen om 14 uur";
+            } else if (datum >= 14 && datum < 18) {
+                text.innerHTML = "Wij sluiten om 18 uur";
+            } else if (datum >= 18) {
+                text.innerHTML = "We openen om 9 uur";
+            }
+            break;
+        case 2:
+            tuesday.setAttribute("id", "currdate");
+
+            if (datum >= 9 && datum < 12.5 || datum >= 14 && datum < 18) {
+                titel.classList.toggle("open");
+            } else {
+                titel.classList.toggle("closed");
+            }
+            if (datum < 9) {
+                text.innerHTML = "Wij openen om 9 uur";
+            } else if (datum >= 10 && datum < 12.5) {
+                text.innerHTML = "Wij sluiten om 12 uur 30";
+            } else if (datum >= 12.5 && datum < 14) {
+                text.innerHTML = "Wij openen om 14 uur";
+            } else if (datum >= 14 && datum < 18) {
+                text.innerHTML = "Wij sluiten om 18 uur";
+            } else if (datum >= 18) {
+                text.innerHTML = "Wij openen om 9 uur";
+            }
+            break;
+        case 3:
+            wednesday.setAttribute("id", "currdate");
+            if (datum >= 9 && datum < 12.5 || datum >= 14 && datum < 18) {
+                titel.classList.toggle("open");
+            } else {
+                titel.classList.toggle("closed");
+            }
+            if (datum < 9) {
+                text.innerHTML = "Wij openen om 9 uur";
+            } else if (datum >= 10 && datum < 12.5) {
+                text.innerHTML = "Wij sluiten om 12 uur 30";
+            } else if (datum >= 12.5 && datum < 14) {
+                text.innerHTML = "Wij openen om 14 uur";
+            } else if (datum >= 14 && datum < 18) {
+                text.innerHTML = "Wij sluiten om 18 uur";
+            } else if (datum >= 18) {
+                text.innerHTML = "Wij openen vrijdag om 9 uur";
+            }
+            break;
+        case 4:
+            thursday.setAttribute("id", "currdate");
+            text.innerHTML = "Wij openen op vrijdag om 9 uur";
+            titel.classList.toggle("closed");
+            break;
+        case 5:
+            friday.setAttribute("id", "currdate");
+            if (datum >= 9 && datum < 12.5 || datum >= 14 && datum < 18) {
+                titel.classList.toggle("open");
+            } else {
+                titel.classList.toggle("closed");
+            }
+            if (datum < 9) {
+                text.innerHTML = "We openen om 9 uur";
+            } else if (datum >= 10 && datum < 12.5) {
+                text.innerHTML = "Wij sluiten om 12 uur 30";
+            } else if (datum >= 12.5 && datum < 14) {
+                text.innerHTML = "We openen om 14 uur";
+            } else if (datum >= 14 && datum < 18) {
+                text.innerHTML = "Wij sluiten om 18 uur";
+            } else if (datum >= 18) {
+                text.innerHTML = "Wij openen om 9 uur";
+            }
+            break;
+        case 6:
+            saturday.setAttribute("id", "currdate");
+            if (datum >= 8 && datum < 18) {
+                titel.classList.toggle("open");
+            } else {
+                titel.classList.toggle("closed");
+            }
+            if (datum < 8) {
+                text.innerHTML = "Wij openen om 8 uur";
+            } else if (datum >= 9 && datum < 17) {
+                text.innerHTML = "Wij sluiten om 17 uur";
+            } else if ( datum > 17) {
+                 text.innerHTML = "Wij openen maandag om 10 uur";
+            }
+
+            break;
+        case 0:
+            sunday.setAttribute("id", "currdate");
+            titel.classList.toggle("closed");
+            text.innerHTML = "Wij openen op maandag om 10 uur";
+            break;
+    }
+    setInterval(aftellen, 1000);
+}
+time();
