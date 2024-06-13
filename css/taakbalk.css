@@ -45,6 +45,7 @@ box-shadow: 0px 5px 10px rgba(137, 16, 16, 0.8); /* Adjust the alpha value as ne
 
 .bedrijfsTitel img {
   width: 350px;
+  cursor: pointer;
 }
 
 
