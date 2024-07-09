@@ -6,6 +6,16 @@ body {
   width: 100%;
 }
 
+.verlof {
+  font-size    : 16px;
+  color        : #464646;
+  margin-top   : 20px;
+  margin-bottom: 10px;
+  text-align: center;
+  padding: 2px;
+  text-transform: none;
+}
+
 /* .logo {
   width        : 10%;
   margin-top   : -11%;
