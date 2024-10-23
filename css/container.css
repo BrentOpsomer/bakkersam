@@ -17,7 +17,9 @@ body {
 }
 
 .herfsth1, herfstp {
-  text-align: center;
+  text-align: center !important;
+  color: black !important;
+  
 }
 
 /* .logo {
