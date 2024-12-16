@@ -19,7 +19,10 @@ body {
 h1 {
   text-align: center !important;
   color: black !important;
-  
+}
+p {
+  text-align: center !important;
+  color: black !important;
 }
 
 /* .logo {
