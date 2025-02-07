@@ -57,7 +57,7 @@ function insertNavigationMenu() {
 function includeFooterMenu() {
   const footerMenu = `
   <div class="copyPos">
-  <p class="copyright">Copyright © 2024 Bakker Sam. Alle rechten voorbehouden</p>
+  <p class="copyright">Copyright © 2025 Bakker Sam. Alle rechten voorbehouden</p>
   <p class="privacy"><a class="privacyLink" href="privacyBeleid.html">Privacy Policy</a></p>
 </div>
     `;
