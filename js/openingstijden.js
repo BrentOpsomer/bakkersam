@@ -27,22 +27,8 @@ const time = () => {
 
         case 1:
             monday.setAttribute("id", "currdate");
-            if (datum >= 10 && datum < 12.5 || datum >= 14 && datum < 18) {
-                titel.classList.toggle("open");
-            } else {
-                titel.classList.toggle("closed");
-            }
-            if (datum < 10) {
-                text.innerHTML = "We openen om 10 uur";
-            } else if (datum >= 10 && datum < 12.5) {
-                text.innerHTML = "Wij sluiten om 12 uur 30";
-            } else if (datum >= 12.5 && datum < 14) {
-                text.innerHTML = "We openen om 14 uur";
-            } else if (datum >= 14 && datum < 18) {
-                text.innerHTML = "Wij sluiten om 18 uur";
-            } else if (datum >= 18) {
-                text.innerHTML = "We openen om 9 uur";
-            }
+            titel.classList.toggle("closed");
+            text.innerHTML = "Wij openen op dinsdag om 9 uur";
             break;
         case 2:
             tuesday.setAttribute("id", "currdate");
@@ -126,7 +112,7 @@ const time = () => {
         case 0:
             sunday.setAttribute("id", "currdate");
             titel.classList.toggle("closed");
-            text.innerHTML = "Wij openen op maandag om 10 uur";
+            text.innerHTML = "Wij openen op dinsdag om 9 uur";
             break;
     }
     setInterval(aftellen, 1000);
